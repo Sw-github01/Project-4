@@ -10,16 +10,59 @@ This project is to use pyspark and apply machine learning techniques to predict 
 
 ### Project details
 
+#### Pre-requisite
+
+Python 3.7.6
+PySpark Local 3.0.0
+PySpark IBM 2.3.4
+PySpark AWS 2.4.5
+Jupyter Notebooks
+For Python packages see requirements.txt
+
+
 #### Part I EDA
 
-
+location: location of user, seems to append each new state (location, state)
+gender: user gender (M/F/None)
+page: what page the user is on during event (pages)
+level: subscription level check uniqueness (free or paid)
+auth: authenication (logged in/out)
+length: time spent on page, max 50 mins on NextSong (if song paused??)
+registration: unknown (registration unixtime)
+ts: timestamp of event in ms (event unixtime)
+userId: unique (userId val)
+sessionId: unique sessionId per user?
+itemInSession: lcounter for the number of items in a single session (item listened to in session)
+firstName: users first name (not important, remove)
+lastName: users lastname
+artist: song artist
+song: songname
+userAgent: device/browser (not important for us, remove)
+method: API PUT/GET http request (not important for us, remove)
+status: http status
 
 ##### Part II Feature Engineering
 
+Features:
 
+Av time spend in an hourly session
+Max song listen to per hour 
+Thumbs up count
+Thumbs down count
+Gender
+etc....
 
 #### Part III Model build and Evaluation
+3 machine learning techniques applied:
+Logistic Regression
+Random forest
+Gradient GBost
 
+Machine learning model Evaluation and Result:
+Results
+Logistic regression: %
+RFC: %
+GBT: %
 
 ### Acknowledgements
 
