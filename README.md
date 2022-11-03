@@ -64,6 +64,11 @@ Logistic regression: %
 RFC: %
 GBT: %
 
+Detect Overfitting and solution
+Cross validation: Use your initial training data to generate muliple mini train-test splits. Use these splits to tune your model. In standard k-fold cross-validation, we partition the data into k subsets, called folds. THen we iteratively trin the algorithm on k-1 folds while using the remaining fold as the test set.
+Ensembles are machine learning methods for combining predictions from multiple separate models. There are a few different methods for ensembling, but the two most common are:
+https://elitedatascience.com/overfitting-in-machine-learning
+
 ### Acknowledgements
 
 Acknowledgements Open Source Acknowledgement. The Supported Packages are comprised of open source software, which is subject to the terms of the open source software license(s) accompanying or otherwise applicable to that open source software. You acknowledge that your own distribution or deployment of instances containing or linking to the Supported Packages or any other open source software may trigger open source license requirements for which you are responsible. Nothing in this Agreement limits your rights under or grants rights to you that supersede the terms of any applicable open source software license.
