@@ -6,7 +6,7 @@ Customer churn, also known as customer attrition, in its most basic form, is whe
 
 ### Project Motivation
 
-This project is to use pyspark and apply machine learning techniques to predict the customer churn event of Spotify data, such as song artistist, song length, session items, customer location and etc.
+This project is to use pyspark and apply machine learning techniques to build machine learning model and predict the customer churn event of Spotify data. It excercise load large datasets into Spark and manipulate them using Spark SQL and Spark Dataframes, as well as use the machine learning APIs within Spark ML to build and tune models.
 
 ### Project details
 
@@ -18,6 +18,8 @@ Jupyter Notebooks
 
 
 #### Part I EDA
+
+Details of Spotify data as below:
 
 location: location of user, seems to append each new state (location, state)
 gender: user gender (M/F/None)
@@ -40,28 +42,36 @@ status: http status
 
 ##### Part II Feature Engineering
 
-Features:
+This part is to derive new features based on the EDA process, and there are following features extracted/built:
 
-Av time spend in an hourly session
-Max song listen to per hour 
-Thumbs up count
-Thumbs down count
-Gender
-etc....
+root
+ |-- userId: integer (nullable = true)
+ |-- churn: integer (nullable = false)
+ |-- gender: integer (nullable = false)
+ |-- padi_level: integer (nullable = false)
+ |-- thumbs_down_count: long (nullable = false)
+ |-- thumbs_up_count: long (nullable = false)
+ |-- page_vist_ct_hour: long (nullable = false)
+ |-- avg_item_hour: double (nullable = true)
+ |-- max_play_hour: long (nullable = false)
+ |-- avg_length_hour: double (nullable = true)
 
 #### Part III Model build and Evaluation
-3 machine learning techniques applied:
+###### 3 machine learning techniques been excercised:
 Logistic Regression
 Random forest
-Gradient GBost
+Gradient Boosted Trees
 
-Machine learning model Evaluation and Result:
+###### mahicne learning pipeline
+Along with excercising varied machine learning techniques, machine learning pipeline has been applied. which including data transformation and prediction through which data passes. The outcome of the pipeline is the trained model which can be used for making the predictions.
+
+###### Machine learning model Evaluation and Result:
 Results
 Logistic regression: %
 RFC: %
 GBT: %
 
-Detect Overfitting and solution
+###### Detect Overfitting and solution
 Cross validation: Use your initial training data to generate muliple mini train-test splits. Use these splits to tune your model. In standard k-fold cross-validation, we partition the data into k subsets, called folds. THen we iteratively trin the algorithm on k-1 folds while using the remaining fold as the test set.
 Ensembles are machine learning methods for combining predictions from multiple separate models. There are a few different methods for ensembling, but the two most common are:
 https://elitedatascience.com/overfitting-in-machine-learning
