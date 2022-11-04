@@ -67,17 +67,16 @@ Along with excercising varied machine learning techniques, machine learning pipe
 
 ###### Machine learning model Evaluation and Result:
 Results
-Logistic regression: %
-RFC: %
-GBT: %
+Logistic regression: 100%
+RFC: 100%
+GBT: 100%
 
 ###### Detect Overfitting and solution
-Cross validation: Use your initial training data to generate muliple mini train-test splits. Use these splits to tune your model. In standard k-fold cross-validation, we partition the data into k subsets, called folds. THen we iteratively trin the algorithm on k-1 folds while using the remaining fold as the test set.
-Ensembles are machine learning methods for combining predictions from multiple separate models. There are a few different methods for ensembling, but the two most common are:
-https://elitedatascience.com/overfitting-in-machine-learning
-
+Cross validation
+F1 score
 ### Acknowledgements
 
 Acknowledgements Open Source Acknowledgement. The Supported Packages are comprised of open source software, which is subject to the terms of the open source software license(s) accompanying or otherwise applicable to that open source software. You acknowledge that your own distribution or deployment of instances containing or linking to the Supported Packages or any other open source software may trigger open source license requirements for which you are responsible. Nothing in this Agreement limits your rights under or grants rights to you that supersede the terms of any applicable open source software license.
 
+Note: there is a separate Medium post create as part of this project
 https://medium.com/@Sw001/spotify-customer-churn-prediction-using-pyspark-and-machine-learning-techniques-c95dcdc4084e
