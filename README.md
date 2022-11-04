@@ -14,8 +14,6 @@ This project is to use pyspark and apply machine learning techniques to predict 
 
 Python 3.7.6
 PySpark Local 3.0.0
-PySpark IBM 2.3.4
-PySpark AWS 2.4.5
 Jupyter Notebooks
 For Python packages see requirements.txt
 
