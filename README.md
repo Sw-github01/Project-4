@@ -15,7 +15,6 @@ This project is to use pyspark and apply machine learning techniques to predict 
 Python 3.7.6
 PySpark Local 3.0.0
 Jupyter Notebooks
-For Python packages see requirements.txt
 
 
 #### Part I EDA
